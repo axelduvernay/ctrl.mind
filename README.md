@@ -1,4 +1,4 @@
-# ctrl.app
+# ctrl.mind
 
 Un whiteboard infini pour ne plus perdre ses idées.
 
