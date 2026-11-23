@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serveur de développement pour ctrl.app.
+"""Serveur de développement pour ctrl.mind.
 
 `python3 -m http.server` laisse le navigateur mettre les modules en cache, ce
 qui fait qu'une modification du code peut passer inaperçue au rechargement.
@@ -34,5 +34,5 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"ctrl.app → http://localhost:{PORT}")
+    print(f"ctrl.mind → http://localhost:{PORT}")
     ThreadingHTTPServer(("", PORT), Handler).serve_forever()

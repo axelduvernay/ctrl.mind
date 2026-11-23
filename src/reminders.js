@@ -1,6 +1,6 @@
 /* Les rappels.
 
-   Tant que ctrl.app est ouvert — onglet visible ou non — on vérifie
+   Tant que ctrl.mind est ouvert — onglet visible ou non — on vérifie
    régulièrement les rappels échus et on les fait sonner : notification du
    système si elle est autorisée, message dans l'app dans tous les cas.
 
@@ -60,7 +60,7 @@ function ring(block) {
 
   if (!("Notification" in window) || Notification.permission !== "granted") return;
   try {
-    const n = new Notification("ctrl.app", { body: text, icon: "icon.svg", tag: block.id });
+    const n = new Notification("ctrl.mind", { body: text, icon: "icon.svg", tag: block.id });
     n.onclick = () => {
       window.focus();
       reveal(block.id);

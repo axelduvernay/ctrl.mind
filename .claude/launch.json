@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "ctrl.app",
+      "name": "ctrl.mind",
       "runtimeExecutable": "python3",
       "runtimeArgs": [
         "serve.py",

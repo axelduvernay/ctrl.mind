@@ -1,4 +1,4 @@
--- ctrl.app — base de données, partage et stockage (version 2).
+-- ctrl.mind — base de données, partage et stockage (version 2).
 -- À coller dans Supabase → SQL Editor → New query → Run.
 -- Le script peut être relancé sans risque. Il met à niveau la version 1
 -- (un board par compte) : ton board existant est repris tel quel.

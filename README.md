@@ -1,4 +1,4 @@
-# ctrl.app
+# ctrl.mind
 
 Un whiteboard infini pour ne plus perdre ses idées.
 
@@ -7,7 +7,22 @@ Une seule surface où tout atterrit d'abord, et où le sens se décide après. O
 dans l'espace suffit souvent à se souvenir.
 
 Le concept complet, les arbitrages et la feuille de route vivent dans le
-document produit : **ctrl.app — Concept et vision produit**.
+document produit : **ctrl.mind — Concept et vision produit**.
+
+## Ancien nom : ctrl.app
+
+L’app s’appelait ctrl.app. Le nom revient désormais à une autre app (le CRM
+pour musiciens). Après avoir renommé le repo en `ctrl.mind` sur GitHub :
+
+1. Supabase → Authentication → URL Configuration : remplacer
+   `https://axelduvernay.github.io/ctrl.app/` par
+   `https://axelduvernay.github.io/ctrl.mind/` (Site URL et Redirect URLs).
+2. Ouvrir la nouvelle adresse et se reconnecter : les boards synchronisés
+   reviennent. Les données locales restent aussi, l’app garde le nom de base
+   `ctrl-app` dans le navigateur.
+3. Réactiver les notifications sur chaque appareil (elles étaient liées à
+   l’ancienne adresse), et réinstaller l’app sur l’écran d’accueil.
+4. Les exports `.json` faits avec ctrl.app s’importent toujours.
 
 ## Lancer l'app
 

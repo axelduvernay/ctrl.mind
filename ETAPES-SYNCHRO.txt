@@ -1,4 +1,4 @@
-CTRL.APP — ACTIVER LA SYNCHRONISATION
+CTRL.MIND — ACTIVER LA SYNCHRONISATION
 Ce qu'il te reste à faire, dans l'ordre. Compte 10 minutes.
 (Le code est prêt et en ligne. Les noms des menus Supabase peuvent changer
 légèrement ; si quelque chose ne correspond pas, envoie-moi une capture.)
@@ -16,10 +16,10 @@ menu ⋮ → « Exporter le board » → range le fichier .json dans iCloud Driv
 ÉTAPE 1 — CRÉER LA BASE (2 minutes)
 ==============================================================
 
-1. Supabase → ton projet ctrl.app → menu de gauche « SQL Editor ».
+1. Supabase → ton projet ctrl.mind → menu de gauche « SQL Editor ».
 2. « New query ».
 3. Ouvre le fichier supabase/schema.sql du projet (sur GitHub :
-   github.com/axelduvernay/ctrl.app, branche main-486yxj, dossier
+   github.com/axelduvernay/ctrl.mind, branche main-486yxj, dossier
    supabase), copie TOUT son contenu et colle-le dans l'éditeur.
 4. « Run ». Tu dois voir « Success. No rows returned ».
 
@@ -33,9 +33,9 @@ ne voit que ses propres données.
 ==============================================================
 
 Authentication → URL Configuration :
-   - Site URL : https://axelduvernay.github.io/ctrl.app/
+   - Site URL : https://axelduvernay.github.io/ctrl.mind/
    - Redirect URLs → « Add URL », ajoute les deux :
-       https://axelduvernay.github.io/ctrl.app/
+       https://axelduvernay.github.io/ctrl.mind/
        http://localhost:4321
    - Save.
 
@@ -53,7 +53,7 @@ Authentication → Emails (ou Email Templates). À faire dans DEUX modèles,
 « Magic Link » ET « Confirm signup » (le premier mail d'un nouveau compte) :
 remplace le contenu par :
 
-   <h2>Connexion à ctrl.app</h2>
+   <h2>Connexion à ctrl.mind</h2>
    <p>Ton code : <strong>{{ .Token }}</strong></p>
    <p>Ou clique : <a href="{{ .ConfirmationURL }}">se connecter</a></p>
 
@@ -67,7 +67,7 @@ Save.
 FAIS-LE D'ABORD SUR LE MAC QUI A TON BOARD : à la première connexion,
 c'est ce board qui part dans le cloud.
 
-1. Ouvre https://axelduvernay.github.io/ctrl.app/ et fais ⌘⇧R.
+1. Ouvre https://axelduvernay.github.io/ctrl.mind/ et fais ⌘⇧R.
    Le menu ⋮ doit afficher en bas « v07.10 · synchro ».
    (Si ton board est sur localhost:4321, fais d'abord git pull puis
    python3 serve.py, et connecte-toi là.)

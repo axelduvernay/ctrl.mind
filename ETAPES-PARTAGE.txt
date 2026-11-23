@@ -1,4 +1,4 @@
-CTRL.APP — ACTIVER LE PARTAGE ET LES BOARDS MULTIPLES
+CTRL.MIND — ACTIVER LE PARTAGE ET LES BOARDS MULTIPLES
 Une seule chose à faire de ton côté : relancer le script SQL. 3 minutes.
 
 
@@ -17,7 +17,7 @@ risque avec tes données.)
 
 1. Supabase → ton projet → « SQL Editor » → « New query ».
 2. Ouvre le fichier supabase/schema.sql (sur GitHub :
-   github.com/axelduvernay/ctrl.app, branche main-486yxj, dossier supabase),
+   github.com/axelduvernay/ctrl.mind, branche main-486yxj, dossier supabase),
    copie TOUT son contenu, colle-le.
 3. « Run ». Tu dois voir « Success. No rows returned ».
 
@@ -35,7 +35,7 @@ Le script peut être relancé sans risque.
 ÉTAPE 2 — RECHARGER L'APP SUR CHAQUE APPAREIL
 ==============================================================
 
-Ouvre ctrl.app et fais ⌘⇧R (sur iPhone : ferme et rouvre l'app).
+Ouvre ctrl.mind et fais ⌘⇧R (sur iPhone : ferme et rouvre l'app).
 Le menu ⋮ doit afficher en bas « v08.10 · partage ».
 
 Entre l'étape 1 et le rechargement, une ancienne version de l'app ouverte

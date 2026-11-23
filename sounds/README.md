@@ -1,4 +1,4 @@
-# Sons de ctrl.app
+# Sons de ctrl.mind
 
 Déposer ici un fichier par moment, nommé exactement comme dans le tableau :
 `create.wav` ou `create.mp3`. Un son absent ne joue simplement rien : on
@@ -45,5 +45,5 @@ qui fatiguent l'oreille en premier si ils sont trop présents.
 
 - Les navigateurs n'autorisent le son qu'après un premier clic ou une
   première touche dans la page.
-- Le rappel ne sonne que si ctrl.app est ouvert. Sur iPhone, l'app passée en
+- Le rappel ne sonne que si ctrl.mind est ouvert. Sur iPhone, l'app passée en
   arrière-plan est mise en pause : rien ne sonne.

@@ -1,4 +1,4 @@
--- ctrl.app — notifications push (rappels, même app fermée).
+-- ctrl.mind — notifications push (rappels, même app fermée).
 -- À coller dans Supabase → SQL Editor → New query → Run, APRÈS schema.sql.
 -- Le script peut être relancé sans risque.
 --
@@ -92,7 +92,7 @@ $$;
 create or replace function public.queue_test_push()
 returns void language sql security definer set search_path = public as $$
   insert into public.push_queue (user_id, title, body)
-  select auth.uid(), 'ctrl.app', 'Les notifications marchent sur cet appareil.'
+  select auth.uid(), 'ctrl.mind', 'Les notifications marchent sur cet appareil.'
   where auth.uid() is not null
 $$;
 

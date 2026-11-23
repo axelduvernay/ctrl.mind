@@ -9,6 +9,8 @@
 
 import { uid, debounce, contains } from "./util.js";
 
+// Nom hérité de l’ancien nom de l’app (ctrl.app) : on le garde pour ne pas perdre
+// les données déjà enregistrées dans les navigateurs.
 const DB_NAME = "ctrl-app";
 const DB_VERSION = 1;
 const DOC_KEY = "doc";

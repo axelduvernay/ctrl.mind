@@ -144,7 +144,7 @@ export async function exportBoard() {
   for (const [key, blob] of state.assets) {
     assets[key] = { type: blob.type, name: blob.name || "", data: await blobToBase64(blob) };
   }
-  const payload = { format: "ctrl.app", version: 1, exportedAt: new Date().toISOString(), doc: state.doc, assets };
+  const payload = { format: "ctrl.mind", version: 1, exportedAt: new Date().toISOString(), doc: state.doc, assets };
   const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
@@ -164,7 +164,7 @@ export function importBoard() {
     if (!file) return;
     try {
       const payload = JSON.parse(await file.text());
-      if (payload.format !== "ctrl.app") throw new Error("format");
+      if (payload.format !== "ctrl.mind" && payload.format !== "ctrl.app") throw new Error("format");
       for (const [key, asset] of Object.entries(payload.assets || {})) {
         const blob = await base64ToBlob(asset.data, asset.type);
         state.assets.set(key, blob);

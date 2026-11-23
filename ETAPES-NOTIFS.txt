@@ -1,4 +1,4 @@
-CTRL.APP — ACTIVER LES NOTIFICATIONS PUSH (rappels, même app fermée)
+CTRL.MIND — ACTIVER LES NOTIFICATIONS PUSH (rappels, même app fermée)
 Deux choses à faire dans Supabase (5 minutes), puis une sur l'iPhone.
 Aucune clé ni aucun secret à copier : tout se crée tout seul.
 
@@ -9,7 +9,7 @@ Aucune clé ni aucun secret à copier : tout se crée tout seul.
 
 1. Supabase → ton projet → « SQL Editor » → « New query ».
 2. Ouvre le fichier supabase/push.sql (sur GitHub :
-   github.com/axelduvernay/ctrl.app, branche main-486yxj, dossier supabase),
+   github.com/axelduvernay/ctrl.mind, branche main-486yxj, dossier supabase),
    copie TOUT son contenu, colle-le.
 3. « Run ». Tu dois voir une ligne de résultat (le numéro de la tâche
    planifiée) ou « Success ».
@@ -40,7 +40,7 @@ l'heure et demande à la fonction « push » (étape 2) de les envoyer.
 ÉTAPE 3 — SUR L'IPHONE (iOS 16.4 ou plus récent)
 ==============================================================
 
-1. Safari → https://axelduvernay.github.io/ctrl.app/
+1. Safari → https://axelduvernay.github.io/ctrl.mind/
 2. Bouton Partager (carré avec une flèche) → « Sur l'écran d'accueil » →
    « Ajouter ».
 3. Ouvre ctrl depuis sa nouvelle icône (pas depuis Safari).

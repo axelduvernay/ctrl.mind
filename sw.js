@@ -6,7 +6,7 @@
 
    Il reçoit aussi les notifications push (les rappels, app fermée). */
 
-const CACHE = "ctrl-app-v17";
+const CACHE = "ctrl-mind-v18";
 
 const SHELL = [
   "./",
@@ -93,7 +93,7 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener("push", (event) => {
   let data = {};
   try { data = event.data ? event.data.json() : {}; } catch { data = { body: event.data && event.data.text() }; }
-  event.waitUntil(self.registration.showNotification(data.title || "ctrl.app", {
+  event.waitUntil(self.registration.showNotification(data.title || "ctrl.mind", {
     body: data.body || "",
     // Même étiquette que la notification de l'app ouverte : jamais deux fois.
     tag: data.tag || undefined,

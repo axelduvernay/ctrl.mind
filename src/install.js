@@ -1,4 +1,4 @@
-/* ctrl.app comme une app, sur le téléphone.
+/* ctrl.mind comme une app, sur le téléphone.
 
    - Sur iPhone, dans Safari : une petite invitation, une seule fois, à
      l'ajouter à l'écran d'accueil (Partager → Sur l'écran d'accueil). Elle

@@ -118,7 +118,7 @@ function remindSection(b, redraw) {
         onchange: (e) => set(e.target.value || null),
       })
     ),
-    el("div", { class: "hint", text: "Sonne tant que ctrl.app est ouvert, même en arrière-plan." })
+    el("div", { class: "hint", text: "Sonne tant que ctrl.mind est ouvert, même en arrière-plan." })
   );
 }
 

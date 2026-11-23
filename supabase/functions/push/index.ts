@@ -1,4 +1,4 @@
-// ctrl.app — envoi des notifications push.
+// ctrl.mind — envoi des notifications push.
 //
 // Appelée chaque minute par la base (voir supabase/push.sql), et par l'app
 // pour la notification de test. Elle ne fait qu'envoyer ce qui est dû :
@@ -35,7 +35,7 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
 
   const k = await keys();
-  webpush.setVapidDetails("https://axelduvernay.github.io/ctrl.app/", k.public_key, k.private_key);
+  webpush.setVapidDetails("https://axelduvernay.github.io/ctrl.mind/", k.public_key, k.private_key);
 
   const { data: rows, error } = await db.rpc("claim_pushes");
   if (error) return new Response(JSON.stringify({ error: error.message }), { status: 500, headers: CORS });
